@@ -77,7 +77,7 @@ workclass = st.sidebar.selectbox("Workclass", [
     "Private", "Self-emp-not-inc", "Self-emp-inc", "Federal-gov", "Local-gov", "State-gov", "Others"
 ])
 educational_num = st.sidebar.slider("Educational-num (years)", 5, 16, 10)
-experience = st.sidebar.slider("Years of Experience (not used in prediction)", 0, 40, 5)
+experience = st.sidebar.slider("Years of Experience", 0, 40, 5)
 occupation = st.sidebar.selectbox("Occupation", [
     "Tech-support", "Craft-repair", "Other-service", "Sales", "Exec-managerial", "Prof-specialty", "Handlers-cleaners",
     "Machine-op-inspct", "Adm-clerical", "Farming-fishing", "Transport-moving", "Priv-house-serv", "Protective-serv", "Armed-Forces", "Others"
