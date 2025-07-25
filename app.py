@@ -2,50 +2,60 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Add custom CSS for gradient background and modern look
+# Add custom CSS for dark gradient background and improved readability
 st.markdown(
     """
     <style>
     body {
-        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%) !important;
+        background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
     }
     .stApp {
-        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%) !important;
+        background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
     }
     .stSidebar {
-        background: rgba(255,255,255,0.7) !important;
+        background: rgba(30, 30, 40, 0.95) !important;
         border-radius: 16px !important;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08) !important;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.18) !important;
+        color: #fff !important;
     }
     .st-bb, .st-c0, .st-c1, .st-c2, .st-c3, .st-c4, .st-c5, .st-c6, .st-c7, .st-c8, .st-c9 {
-        background: rgba(255,255,255,0.7) !important;
+        background: rgba(40, 40, 60, 0.92) !important;
         border-radius: 16px !important;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08) !important;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.18) !important;
+        color: #fff !important;
     }
     .stButton>button {
-        background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%) !important;
-        color: #222 !important;
+        background: linear-gradient(90deg, #434343 0%, #262626 100%) !important;
+        color: #fff !important;
         border: none !important;
         border-radius: 8px !important;
         padding: 0.5em 2em !important;
         font-weight: 600 !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
         transition: 0.2s;
     }
     .stButton>button:hover {
-        background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%) !important;
-        color: #111 !important;
+        background: linear-gradient(90deg, #262626 0%, #434343 100%) !important;
+        color: #fff !important;
     }
     h1, h2, h3, h4 {
         font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif !important;
         font-weight: 700 !important;
         letter-spacing: 1px;
+        color: #fff !important;
     }
     .stMarkdown, .stDataFrame, .stTable {
-        background: rgba(255,255,255,0.8) !important;
+        background: rgba(40, 40, 60, 0.92) !important;
         border-radius: 12px !important;
         padding: 1em !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.16) !important;
+        color: #fff !important;
+    }
+    .css-1v0mbdj, .css-1d391kg, .css-1cpxqw2, .css-1offfwp, .css-1r6slb0, .css-1kyxreq, .css-1dp5vir, .css-1v4eu6x {
+        color: #fff !important;
+    }
+    label, .stSlider, .stSelectbox, .stNumberInput, .stFileUploader, .stTextInput {
+        color: #fff !important;
     }
     </style>
     """,
