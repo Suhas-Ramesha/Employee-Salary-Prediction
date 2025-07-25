@@ -131,7 +131,7 @@ input_df = pd.DataFrame([{
 
 st.write("### 🔎 Input Data (encoded, used for prediction)")
 st.write(input_df)
-st.write(f"**Years of Experience (not used in prediction):** {experience}")
+st.write(f"**Years of Experience :** {experience}")
 
 if st.button("Predict Salary Class"):
     prediction = model.predict(input_df)
